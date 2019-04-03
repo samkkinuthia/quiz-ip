@@ -2,50 +2,80 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title> QUIZ TIME!</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="brain.jpg">
+  <meta charset="UTF-8">
+  <title> QUIZ TIME!</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="brain.jpg">
 </head>
 
 <body>
 
-    <main>
+  <main>
     <section>
       <h1>welcome to Sam kinuthia's quiz</h1>
-        <h3>Are you ready to take this fun test?</h3>
+      <h3>Are you ready to take this fun test?</h3>
 
-        <h1>INSTRUCTIONS.</h1>
-        <h4>kindly ensure that all the INSTRUCTIONS are followed correctly and to the point for the best results</h4>
-        <p>The INSTRUCTIONS are easy to follow, here they are:</p>
-        
-        <ol>    
-            <li>Relax this is not as serious as I have made it look.</li>
-            <li>Enjoy yourself.</li>
-            <li>Ensure you have writen your name in the Name box above </li>
-            <li>Answer all the questions below.</li>
-            <li>Press the submit button when done at the bottom of this page when done to get your results.</li>
-        </ol>
-        <h2>BEGIN TEST</h2>
+      <h1>INSTRUCTIONS.</h1>
+      <h4>kindly ensure that all the INSTRUCTIONS are followed correctly and to the point for the best results</h4>
+      <p>The INSTRUCTIONS are easy to follow, here they are:</p>
+
+      <ol>
+        <li>Relax this is not as serious as I have made it look.</li>
+        <li>Enjoy yourself.</li>
+        <li>Ensure you have writen your name in the Name box above </li>
+        <li>Answer all the questions below.</li>
+        <li>Press the submit button when done at the bottom of this page when done to get your results.</li>
+      </ol>
+
+      <h2>BEGIN TEST</h2>
 
     </section>
 
     <section>
-        <form>
-            <div class="name">
-            Name: <input type="text" name="STD.Name">
-            </div>
-            <br>
-            Gender: <input type="radio" name="Gender"> Male.
-                    <br>
-                    <input type="radio" name="Gender"> Female.
-                    
-        
+      <form>
+        <div class="name">
+          Name: <input type="text" name="STD.Name">
+        </div>
+        <br>
+        Gender: <input type="radio" name="Gender"> Male.
+        <br>
+        <input type="radio" name="Gender"> Female.
+      </form>
+
+      <form class="question-1">
+        <label>What is Kenyas staple food?</label>
+        <div class="form-group">
+          <input name="question-1" id="choice-1" required type="radio">
+          <label for="choice-1">Maize.</label>
+        </div>
+        <div class="form-group">
+          <input name="question-1" id="choice-1.1" required type="radio">
+          <label for="choice-1.1">Pizza.</label>
+        </div>
+        <br>
+        <form class="question-2">
+          <label>Is Donald Trump a smart man?</label>
+          <div class="form-group">
+            <input name="question-2" id="choice-2" required type="radio">
+            <label for="choice-1">Yes.</label>
+          </div>
+          <div class="form-group">
+            <input name="question-2" id="choice-2.1" required type="radio">
+            <label for="choice-2.1">No.</label>
+          </div>
+
+
+
+
         </form>
+
+
+      </form>
+
     </section>
 
 
-    </main>
+  </main>
 </body>
 <script src="main.js"></script>
 
