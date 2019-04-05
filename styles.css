@@ -1,5 +1,3 @@
-#btn:hover,
-#btn {
-  background-color: #23993c;
-  border-color: #000000;
+.body{
+  background-image: url("grad.png");
 }
