@@ -5,115 +5,138 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title> QUIZ TIME!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
   <link rel="icon" href="brain.jpg">
 </head>
 
-<body>
+<body class ="body">
 
   <main>
-    <section>
-      <h1>WELCOME TO QUIZ FUN!</h1>
-      <h3>Are you ready to take this fun test?</h3>
-
-      <h1>INSTRUCTIONS.</h1>
-      <h4>kindly ensure that all the INSTRUCTIONS are followed correctly and to the point for the best results</h4>
-      <p>The INSTRUCTIONS are easy to follow, here they are:</p>
-
-      <ol>
-        <li>Relax this is not as serious as I have made it look.</li>
-        <li>Enjoy yourself.</li>
-        <li>Ensure you have writen your name in the Name box above </li>
-        <li>Answer all the questions below.</li>
-        <li>Press the submit button when done at the bottom of this page when done to get your results.</li>
-      </ol>
-
-      <h2>BEGIN TEST</h2>
-
-    </section>
-
-    <section>
-      <form>
-        <div class="name">
-          Name: <input type="text" name="STD.Name">
+    <div class="container">
+      <section>
+        <div class="page-header">
+          <h1>WELCOME TO QUIZ FUN!</h1>
         </div>
         <br>
-        Gender: 
-                <br>
-              <div class="gender">
-                <input type="radio" name="Gender"> Male.
-                <input type="radio" name="Gender"> Female.
-              </div>
-      </form>
-      <br>
-              <form class="question-1">
-                    <label>What is Kenyas staple food?</label>
-                    <div class="form-group">
-                      <input name="question-1" id="choice-1" required type="radio">
-                      <label for="choice-1">Maize.</label>
-                    </div>
-                    <div class="form-group">
-                      <input name="question-1" id="choice-1.1" required type="radio">
-                      <label for="choice-1.1">Pizza.</label>
-                    </div>
-                <br>
-                <form class="question-2">
-                      <label>Is Donald Trump a smart man?</label>
-                      <div class="form-group">
-                        <input name="question-2" id="choice-2" required type="radio">
-                        <label for="choice-1">Yes.</label>
-                      </div>
-                      <div class="form-group">
-                        <input name="question-2" id="choice-2.1" required type="radio">
-                        <label for="choice-2.1">No.</label>
-                      </div>
-                  <br>
-                  <form class="question-3">
-                        <label>Migingo's main economic activity is?</label>
-                        <div class="form-group">
-                          <input name="question-3" id="choice-3" required type="radio">
-                          <label for="choice-3">Fishing.</label>
-                        </div>
-                        <div class="form-group">
-                          <input name="question-3" id="choice-3.1" required type="radio">
-                          <label for="choice-3.1">Being stolen by Ugandans.</label>
-                        </div>
-                    <br>
-                    <form class="question-4">
-                          <label>Who is Kenyas first dictator?</label>
-                          <div class="form-group">
-                            <input name="question-4" id="choice-4" required type="radio">
-                            <label for="choice-4">Prof.Anyang'nyong'o.</label>
-                          </div>
-                          <div class="form-group">
-                            <input name="question-4" id="choice-4.1" required type="radio">
-                            <label for="choice-4.1">Hon Daniel Arap Moi Terotich.</label>
-                          </div>
-                      <br>
-                      <form class="question-5">
-                            <label>Are China's investments in Africa a good thing for the developing continent?</label>
-                            <div class="form-group">
-                              <input name="question-5" id="choice-5" required type="radio">
-                              <label for="choice-5">No.</label>
-                            </div>
-                            <div class="form-group">
-                              <input name="question-5" id="choice-5.1" required type="radio">
-                              <label for="choice-5.1">Yes.</label>
-                              <br>
-                              <button type="submit" id="btn">SUBMITETH =)</button>
+        <h3>Are you ready to take this fun test?</h3>
+
+        <h1>INSTRUCTIONS.</h1>
+        <h4>kindly ensure that all the INSTRUCTIONS are followed correctly and to the point for the best results</h4>
+        <p>The INSTRUCTIONS are easy to follow, here they are:</p>
+
+        <ol>
+          <li>Relax this is not as serious as I have made it look.</li>
+          <li>Enjoy yourself.</li>
+          <li>Ensure you have writen your name in the Name box above </li>
+          <li>Answer all the questions below.</li>
+          <li>Press the submit button when done at the bottom of this page when done to get your results.</li>
+        </ol>
 
 
 
-                  </form>
+        <h2>BEGIN TEST</h2>
 
+
+      </section>
+
+      <section>
+        <form>
+
+
+          Name: <input type="text" name="STD.Name">
+
+          <br>
+          <br>
+          Gender:
+          <br>
+          <div class="gender">
+            <br>
+            <input type="radio" name="Gender"> Male.
+            <br>
+            <input type="radio" name="Gender"> Female.
+          </div>
+        </form>
+        <br>
+        <form class="questions">
+          <div class="well well-lg">
+
+            <label>1. What is Kenyas staple food?</label>
+            <br>
+            <input name="question-1" id="choice-1" required type="radio">
+            <label for="choice-1">Maize.</label>
+            <br>
+            <input name="question-1" id="choice-1.1" required type="radio">
+            <label for="choice-1.1">Pizza.</label>
+          </div>
+          <br>
+          <div class="well well-lg">
+
+            <label>2. Is Donald Trump a smart man?</label>
+            <br>
+            <input name="question-2" id="choice-2" required type="radio">
+            <label for="choice-1">Yes.</label>
+            <br>
+            <input name="question-2" id="choice-2.1" required type="radio">
+            <label for="choice-2.1">No.</label>
+          </div>
+          <br>
+          <div class="well well-lg">
+
+            <label>3. Migingo's main economic activity is?</label>
+            <br>
+            <input name="question-3" id="choice-3" required type="radio">
+            <label for="choice-3">Fishing.</label>
+            <br>
+            <input name="question-3" id="choice-3.1" required type="radio">
+            <label for="choice-3.1">Being stolen by Ugandans.</label>
+          </div>
+          <br>
+          <div class="well well-lg">
+
+            <label>4. Who is Kenyas first dictator?</label>
+            <br>
+            <input name="question-4" id="choice-4" required type="radio">
+            <label for="choice-4">Prof.Anyang'nyong'o.</label>
+            <br>
+            <input name="question-4" id="choice-4.1" required type="radio">
+            <label for="choice-4.1">Hon Daniel Arap Moi Terotich.</label>
+          </div>
+          <br>
+          <div class="well well-lg">
+
+            <label>5. Are China's investments in Africa a good thing for the developing
+              continent?</label>
+              <br>
+            <input name="question-5" id="choice-5" required type="radio">
+            <label for="choice-5">No.</label>
+              <br>
+            <input name="question-5" id="choice-5.1" required type="radio">
+            <label for="choice-5.1">Yes.</label>
+            <br>
+          </div>
 
         </form>
+        <br>
+        <button type="button" class="btn btn-primary type="submit" id="btn">SUBMITETH =)</button>
+      </div>
+        </form>
 
-    </section>
 
 
+
+
+
+      </section>
+
+    </div>
   </main>
 </body>
-<script src="main.js"></script>
+
 
 </html>
